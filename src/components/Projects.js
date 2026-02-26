@@ -2,7 +2,8 @@ import React from 'react'
 import './Projects.css'
 import { FaBook, FaBriefcase, FaCode, FaGlobe } from 'react-icons/fa6';
 import { FaChalkboardTeacher } from 'react-icons/fa';
-import profile from './imag/image.png'; // make sure this path is correct
+
+
 
 
 function Projects() {

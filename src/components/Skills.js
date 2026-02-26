@@ -9,42 +9,45 @@ function Skills() {
         <section id="skills">
       <h2>Technical Skill</h2>
         <div id="icons">
-          <a href
+          <b  href=""
           className="Github"
           style={{color: "white"}}>
             <FaGithub size={40} />
             <span className="percent">70%</span>
-          </a>
-          <a className="Html5"
+          </b>
+          <b
+          className="Html5"
           style={{color: 'red'}}>
             <FaHtml5 size={40}/>
             <span className="percent">90%</span>
-          </a>
-          <a className="Css3"
+          </b>
+          <b
+          className="Css3"
           style={{color: 'blue'}}>
             <FaCss3 size={40}/>
             <span className="percent">75%</span>
-          </a>
-          <a className="Js"
+          </b>
+          <b
+          className="Js"
           style={{color: 'yellow'}}>
             <FaJs size={40}/>
             <span className="percent">70%</span>
-          </a>
-          <a 
+          </b>
+          <b
           style={{color: 'green'}}>
             <SiMongodb size={40}/>
             <span className="percent">70%</span>
-          </a>
-          <a
+          </b>
+          <b
           style={{color: 'red'}}>
             <FaGit size={40}/>
             <span className="percent">70%</span>
-          </a>
-          <a
+          </b>
+          <b
           style={{color: 'lightblue'}}>
             <FaReact size={40}/>
             <span className="percent">60%</span>
-          </a>
+          </b>
         </div>
       </section>
     </div>
