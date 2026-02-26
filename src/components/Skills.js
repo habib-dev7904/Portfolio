@@ -9,7 +9,8 @@ function Skills() {
         <section id="skills">
       <h2>Technical Skill</h2>
         <div id="icons">
-          <a className="Github"
+          <a href
+          className="Github"
           style={{color: "white"}}>
             <FaGithub size={40} />
             <span className="percent">70%</span>
