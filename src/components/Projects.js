@@ -1,6 +1,6 @@
 import React from 'react'
 import './Projects.css'
-import { FaBook, FaBriefcase, FaCode, FaGlobe } from 'react-icons/fa6';
+import {  FaBriefcase, FaCode, FaGlobe } from 'react-icons/fa6';
 import { FaChalkboardTeacher } from 'react-icons/fa';
 
 
