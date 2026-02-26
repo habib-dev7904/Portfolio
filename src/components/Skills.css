@@ -1,0 +1,115 @@
+/* Skills Section */
+#skills {
+  padding: 80px 20px;
+  background-color: #0d0d0d;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+/* Title */
+#skills h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #00ffcc;
+  letter-spacing: 2px;
+}
+
+/* Icons Container (Flexbox) */
+#icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;      /* Wrap on small screens */
+  gap: 30px;
+}
+
+/* Each Skill Box */
+#icons a {
+  width: 120px;
+  height: 120px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #111;
+  border-radius: 15px;
+  text-decoration: none;
+  cursor: pointer;
+
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+#icons a:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.6);
+}
+
+/* Percentage Text */
+.percent {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #icons {
+    gap: 20px;
+  }
+
+  #icons a {
+    width: 100px;
+    height: 100px;
+  }
+
+  .percent {
+    font-size: 14px;
+  }
+}
+#icons {
+   animation: fadeUp both;
+  animation-timeline: view();
+}
+@keyframes fadeUp{
+  from{
+    opacity: 0;
+    transform: translateY(10px) scale(0.5);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Hide overflow so scrolling is clean */
+#icons {
+  display: flex;
+  gap: 40px;          /* space between icons */
+  white-space: nowrap; /* keep everything in one line */
+  overflow: hidden;    /* hide anything outside the container */
+  animation: scroll 15s linear infinite; /* scroll animation */
+}
+
+/* Define the keyframes for horizontal scrolling */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);  /* start off the screen right */
+  }
+  100% {
+    transform: translateX(-100%); /* move fully to left */
+  }
+}
+
+/* Optional: keep icons aligned nicely */
+#icons a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}

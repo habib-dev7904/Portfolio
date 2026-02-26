@@ -1,0 +1,145 @@
+
+.home {
+  background-color: black;
+  height: 500px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Profile Image */
+.intro img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Text Styles */
+.text h1 {
+  color: white;
+  margin: 0;
+}
+
+/* Typing Animation */
+.typing h1 {
+  color: dodgerblue;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 0;
+  animation: typingErase 7s steps(22) infinite, blink 0.5s step-end infinite;
+}
+
+@keyframes typingErase {
+  0% { width: 0; }          
+  28.5% { width: 22ch; }    
+  71.5% { width: 22ch; }    
+  100% { width: 0; }        
+}
+
+/* Cursor Blink */
+@keyframes blink {
+  50% { border-right: 2px solid transparent; }
+}
+
+/* Buttons */
+button {
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #1e90ff;
+}
+
+/* Space between buttons */
+button:last-child {
+  margin-left: 20px;
+}
+
+/* Paragraph */
+ .P1{
+  background-color: #0d0d0d;
+  color: white; 
+  
+  padding: 20px 25px; 
+  line-height: 1.6;   
+  font-size: 15px;
+
+  border: 1px solid #0d0d0d;
+  border-radius: 16px;
+
+  width: 500px;
+  
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+
+  transition: all 0.3s ease;
+}
+
+/* Social Container */
+.social {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  font-size: 40px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ z-index: 1000;
+   font-size: 28px;
+  
+  transition: transform 0.3s, color 0.3s;
+}
+.social a {
+  font-size: 40px;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+   font-size: 28px;
+  /* color: white; */
+  
+}
+.social a:hover{
+  color: #1e90ff;
+
+}
+/* Colors */
+/* .Linkdin { color: white; }
+.Github { color: white; }
+.Telegram { color: rgb(0, 81, 255); }
+.Whatsapp { color: green; } */
+
+.home{
+  animation: moveUp 1s ease forwards;
+}
+@keyframes moveUp{
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

@@ -1,0 +1,137 @@
+/* Main section */
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.contact h2 {
+  color: white;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Form box */
+.contact-form {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  width: 500px;
+  max-width: 400px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+   justify-content: left;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input fields */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 2px;
+  margin: 8px 0;
+  height: 50px;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.6);
+}
+
+/* Textarea size */
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* Button */
+.contact-form button {
+  margin-top: 15px;
+  padding: 12px;
+
+  background: #4facfe;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+   width: 400px;
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+/* Button hover */
+.contact-form button:hover {
+  background: #2e8bff;
+  transform: translateY(-2px);
+}
+
+/* Button active */
+.contact-form button:active {
+  transform: translateY(0);
+}
+/* Footer Container */
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Content */
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Social Icons */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+
+.footer-social a {
+  font-size: 28px;
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.footer-social a:hover {
+  color: dodgerblue;
+  transform: scale(1.2);
+}
+
+/* Footer Text */
+.footer p {
+  font-size: 14px;
+  color: #aaa;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-social {
+    gap: 15px;
+  }}
