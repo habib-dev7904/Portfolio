@@ -59,34 +59,43 @@
   font-size: 14px;
 }
 
-
-@media (max-width: 768px) {
-
-  nav {
-    padding: 10px 0;
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 900px) {
+  .about-card {
+    flex-direction: column;  /* Stack vertically on smaller screens */
+    gap: 20px;               /* Reduce spacing for mobile */
+    align-items: center;     /* Center items */
   }
 
-  /* Stack menu vertically on mobile */
-  .nav-menu {
-    flex-direction: column;   /* vertical stack */
-    gap: 15px;
-    background-color: black;
-    padding: 15px 0;
-    align-items: center;      /* center links */
+  .text-section {
+    max-width: 100%;         /* Full width */
+    text-align: center;      /* Center text on smaller screens */
   }
 
-  /* Bigger touch area for mobile */
-  .nav-menu li a {
-    font-size: 1rem;
-    padding: 10px 20px;
+  .image-container {
+    width: 150px;            /* Smaller image */
+    height: 150px;
   }
-  .home img {
-    margin-top: 20px; /* space between navbar and image */
-    width: 120px;      /* adjust image size for mobile */
+
+  .image-text {
+    font-size: 12px;         /* Slightly smaller overlay text */
+  }
+}
+
+@media (max-width: 500px) {
+  .about h1 {
+    font-size: 28px;         /* Smaller heading */
+  }
+
+  .p1 {
+    font-size: 1rem;         /* Slightly smaller paragraph */
+  }
+
+  .image-container {
+    width: 120px;
     height: 120px;
   }
-  /* Keep underline intact */
-  /* No changes needed for ::after if you want the same effect */
 }
+
 
   
