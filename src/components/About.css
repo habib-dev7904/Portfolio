@@ -60,52 +60,34 @@
 }
 
 
-/* Responsive About Section */
 @media (max-width: 768px) {
 
-  .about {
-    padding: 20px 15px;
-    text-align: center;
+  nav {
+    position: fixed;   /* fixed at top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    padding: 10px 0;
   }
 
-  .about h1 {
-    font-size: 26px;
-    margin-bottom: 20px;
-  }
-
-  /* Stack text & image */
-  .about-card {
-    flex-direction: column;
-    gap: 25px; /* instead of 300px */
+  .nav-menu {
+    flex-direction: column; /* vertical links */
+    gap: 15px;
     align-items: center;
+    padding: 10px 0;
   }
 
-  /* Text section */
-  .text-section {
-    max-width: 100%;
-  }
-
-  .p1 {
+  .nav-menu li a {
     font-size: 1rem;
-    line-height: 1.6;
-    max-width: 100%;
+    padding: 10px 20px;
+  }
+
+  /* Push content below navbar so it doesn’t overlap */
+  .home {
+    padding-top: 80px;  /* adjust to match navbar height */
+    flex-direction: column;
     text-align: center;
-  }
-
-  /* Image */
-  .image-container {
-    width: 160px;
-    height: 160px;
-  }
-
-  .image-text {
-    font-size: 12px;
-    padding: 4px 8px;
-  }
-}
-/*For Tablet*/
-@media (max-width: 1024px) {
-  .about-card {
-    gap: 60px;
   }
 }
