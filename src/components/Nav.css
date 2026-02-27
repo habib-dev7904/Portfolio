@@ -85,7 +85,7 @@ nav {
 
   /* Stack menu vertically */
   .nav-menu {
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
     background-color: black;
     padding: 15px 0;
