@@ -154,12 +154,14 @@ button:last-child {
     gap: 20px;
   }
 
-  /* Profile Image */
-  .intro img {
-    width: 120px;
-    height: 120px;
-  }
-
+/* Profile Image */
+.intro img {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
   /* Text */
   .text h1 {
     font-size: 22px;
