@@ -60,20 +60,33 @@
 }
 
 
-/* Mobile Navbar Gap */
 @media (max-width: 768px) {
-  
-  /* Push home content below fixed navbar */
-  .home {
-    padding-top: 100px; /* adjust to create enough gap for navbar + image */
-    flex-direction: column;
-    text-align: center;
+
+  nav {
+    padding: 10px 0;
   }
-  
-  /* Optional: add extra margin to the image itself */
+
+  /* Stack menu vertically on mobile */
+  .nav-menu {
+    flex-direction: column;   /* vertical stack */
+    gap: 15px;
+    background-color: black;
+    padding: 15px 0;
+    align-items: center;      /* center links */
+  }
+
+  /* Bigger touch area for mobile */
+  .nav-menu li a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
   .home img {
     margin-top: 20px; /* space between navbar and image */
     width: 120px;      /* adjust image size for mobile */
     height: 120px;
   }
+  /* Keep underline intact */
+  /* No changes needed for ::after if you want the same effect */
 }
+
+  
