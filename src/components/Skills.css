@@ -25,7 +25,7 @@
 }
 
 /* Each Skill Box */
-#icons a {
+#icons b {
   width: 120px;
   height: 120px;
 
@@ -44,7 +44,7 @@
 }
 
 /* Hover Effect */
-#icons a:hover {
+#icons b:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 0 25px rgba(0, 255, 204, 0.6);
 }
@@ -57,21 +57,7 @@
   color: #ccc;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  #icons {
-    gap: 20px;
-  }
 
-  #icons a {
-    width: 100px;
-    height: 100px;
-  }
-
-  .percent {
-    font-size: 14px;
-  }
-}
 #icons {
    animation: fadeUp both;
   animation-timeline: view();
@@ -87,29 +73,66 @@
   }
 }
 
-/* Hide overflow so scrolling is clean */
+
 #icons {
   display: flex;
-  gap: 40px;          /* space between icons */
-  white-space: nowrap; /* keep everything in one line */
-  overflow: hidden;    /* hide anything outside the container */
-  animation: scroll 15s linear infinite; /* scroll animation */
+  gap: 40px;          
+  white-space: nowrap; 
+  overflow: hidden;    
+  animation: scroll 15s linear infinite; 
 }
 
-/* Define the keyframes for horizontal scrolling */
+
 @keyframes scroll {
   0% {
-    transform: translateX(100%);  /* start off the screen right */
+    transform: translateX(100%);  
   }
   100% {
-    transform: translateX(-100%); /* move fully to left */
+    transform: translateX(-100%); 
   }
 }
 
-/* Optional: keep icons aligned nicely */
-#icons a {
+
+#icons b {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
+}
+/* Mobile Fix for Skills Section */
+@media (max-width: 768px) {
+
+  #skills {
+    padding: 50px 15px;
+  }
+
+  #skills h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  /* Stop auto scroll on mobile */
+  #icons {
+    animation: none;
+    transform: none;
+
+    flex-wrap: wrap;
+    justify-content: center;
+
+    overflow: visible;
+    white-space: normal;
+
+    gap: 18px;
+  }
+
+  /* Resize skill boxes */
+  #icons b {
+    width: 90px;
+    height: 90px;
+    border-radius: 12px;
+  }
+
+  .percent {
+    font-size: 13px;
+  }
 }

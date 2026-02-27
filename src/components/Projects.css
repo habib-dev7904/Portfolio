@@ -62,20 +62,7 @@
   min-width: 30px;
 }
 
-/* Responsive (Mobile) */
-@media (max-width: 768px) {
-  .project {
-    grid-template-columns: 1fr; /* 1 column */
-  }
 
-  #experience h1 {
-    font-size: 2rem;
-  }
-
-  .project p {
-    font-size: 0.95rem;
-  }
-}
 .project{
     animation: fadeUp both;
   animation-timeline: view();
@@ -90,4 +77,40 @@
     transform: translateY(0) scale(1);
   }
 
+}
+/* Mobile Fix for Experience Section */
+@media (max-width: 768px) {
+
+  #exprience {
+    padding: 40px 15px;
+  }
+
+  /* Fix project container */
+  .project {
+    margin-right: 0; /* remove big margin */
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    gap: 18px;
+  }
+
+  /* Title */
+  #exprience h1 {
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  /* Cards */
+  .project p {
+    height: auto; /* allow content to grow */
+    padding: 15px 18px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* Icons */
+  .project svg {
+    min-width: 24px;
+    font-size: 20px;
+  }
 }

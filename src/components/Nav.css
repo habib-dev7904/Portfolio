@@ -76,3 +76,29 @@ nav {
 .nav-menu li a.active {
   color: #00bcd4;
 }        
+/* Responsive Navbar */
+@media (max-width: 768px) {
+
+  nav {
+    padding: 10px 0;
+  }
+
+  /* Stack menu vertically */
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+    background-color: black;
+    padding: 15px 0;
+  }
+
+  /* Bigger touch area */
+  .nav-menu li a {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  /* Remove underline animation spacing */
+  .nav-menu li a::after {
+    bottom: -2px;
+  }
+}

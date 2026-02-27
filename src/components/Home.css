@@ -122,11 +122,7 @@ button:last-child {
   color: #1e90ff;
 
 }
-/* Colors */
-/* .Linkdin { color: white; }
-.Github { color: white; }
-.Telegram { color: rgb(0, 81, 255); }
-.Whatsapp { color: green; } */
+
 
 .home{
   animation: moveUp 1s ease forwards;
@@ -141,5 +137,68 @@ button:last-child {
     transform: translateY(0);
   }
 }
+/* Responsive for Mobile Devices */
+@media (max-width: 768px) {
 
+  /* Main Section */
+  .home {
+    height: auto;
+    padding: 40px 15px;
+    flex-direction: column;
+    text-align: center;
+  }
 
+  /* Intro Layout */
+  .intro {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Profile Image */
+  .intro img {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Text */
+  .text h1 {
+    font-size: 22px;
+  }
+
+  .typing h1 {
+    font-size: 20px;
+  }
+
+  /* Paragraph */
+  .P1 {
+    width: 100%;
+    max-width: 350px;
+    font-size: 14px;
+    padding: 15px;
+    margin: auto;
+  }
+
+  /* Buttons */
+  button {
+    width: 130px;
+    height: 38px;
+    font-size: 14px;
+  }
+
+  button:last-child {
+    margin-left: 10px;
+  }
+
+  /* Social Icons */
+  .social {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    transform: none;
+  }
+
+  .social a {
+    font-size: 24px;
+  }
+}
