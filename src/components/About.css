@@ -60,34 +60,20 @@
 }
 
 
+/* Mobile Navbar Gap */
 @media (max-width: 768px) {
-
-  nav {
-    position: fixed;   /* fixed at top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    z-index: 1000;
-    padding: 10px 0;
-  }
-
-  .nav-menu {
-    flex-direction: column; /* vertical links */
-    gap: 15px;
-    align-items: center;
-    padding: 10px 0;
-  }
-
-  .nav-menu li a {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-
-  /* Push content below navbar so it doesn’t overlap */
+  
+  /* Push home content below fixed navbar */
   .home {
-    padding-top: 80px;  /* adjust to match navbar height */
+    padding-top: 100px; /* adjust to create enough gap for navbar + image */
     flex-direction: column;
     text-align: center;
+  }
+  
+  /* Optional: add extra margin to the image itself */
+  .home img {
+    margin-top: 20px; /* space between navbar and image */
+    width: 120px;      /* adjust image size for mobile */
+    height: 120px;
   }
 }
