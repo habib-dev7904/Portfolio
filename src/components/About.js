@@ -1,5 +1,5 @@
 import React from 'react'
-import profile from './imag/image.png';
+
 import './About.css';
 
 function About() {
@@ -23,7 +23,7 @@ function About() {
             </div>
 
             <div className='image-container'>
-              <img src={profile} alt="Profile" />
+              <img src='./image.png' alt="Profile" />
               <div className='image-text'>passionate to Frontend Dev</div>
             </div>
           </div>
