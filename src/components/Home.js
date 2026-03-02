@@ -65,9 +65,9 @@ function Home() {
               and interactive web interfaces using HTML, CSS, JavaScript, and React. 
               I love experimenting with animations, skill bars, and interactive designs.
             </p>
-                <a href="/Habib.pdf" download="Habib_Resume.pdf">
-  <button>Download My CV</button>
-</a> 
+ <a href="/Habib_Mohammed_CV.pdf" download>
+ <button>Download My CV</button>
+</a>
    <a href="https://www.linkedin.com/in/habib-m-065628385" target="_blank" rel="noreferrer">
               <button>Connect</button>
             </a>
