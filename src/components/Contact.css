@@ -1,4 +1,21 @@
-/* Main section */
+/* .contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 500px;
+    gap: 30px;
+     background-color: white;
+     margin-right: 200px;
+}
+input{
+    width: 400px;
+    height: 40px;
+}
+textarea{
+    width: 400px;
+    height: 200px;
+} */
+ /* Main section */
 .contact {
   min-height: 100vh;
   display: flex;

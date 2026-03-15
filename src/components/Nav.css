@@ -1,3 +1,4 @@
+
       .nav-menu{
      justify-content: center;
     
@@ -75,4 +76,50 @@ nav {
 
 .nav-menu li a.active {
   color: #00bcd4;
-}        
+}
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+/* Hamburger */
+.hamburger {
+  display: none; /* hidden on desktop */
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    flex-direction: column;
+    background-color: black;
+    width: 200px;
+    height: calc(100% - 60px);
+    gap: 20px;
+    padding-top: 20px;
+    transition: right 0.3s ease;
+  }
+
+  .nav-menu.open {
+    right: 0;
+  }
+
+  .hamburger {
+    display: flex; /* visible on mobile */
+  }
+}

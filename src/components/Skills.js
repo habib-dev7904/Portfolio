@@ -1,13 +1,13 @@
 import { FaGit, FaGithub, FaJs, FaReact } from "react-icons/fa";
 import './Skills.css';
 import { FaCss3, FaHtml5 } from "react-icons/fa6";
-import { SiMongodb } from "react-icons/si";
+
 
 function Skills() {
   return (
     <div>
         <section id="skills">
-      <h2>Technical Skill</h2>
+      <h1>Technical Skill</h1>
         <div id="icons">
           <b  href=""
           className="Github"
@@ -33,11 +33,7 @@ function Skills() {
             <FaJs size={40}/>
             <span className="percent">70%</span>
           </b>
-          <b
-          style={{color: 'green'}}>
-            <SiMongodb size={40}/>
-            <span className="percent">70%</span>
-          </b>
+         
           <b
           style={{color: 'red'}}>
             <FaGit size={40}/>
